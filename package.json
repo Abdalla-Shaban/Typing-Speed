@@ -1,0 +1,16 @@
+{
+  "name": "typing-speed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "bulid": "npx tailwindcss -i ./src/style.css -o ./dist/tailwind.css",
+    "watch": "npx tailwindcss -i ./src/style.css -o ./dist/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

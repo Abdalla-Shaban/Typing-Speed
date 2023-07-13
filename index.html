@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed</title>
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+  </head>
+  <body class="bg-gray-500">
+    <main>
+      <header class="p-5 text-center text-3xl font-bold text-white bg-gray-900">
+        Typing Speed Test Game
+      </header>
+      <div class="welcome p-5 mx-auto w-[95%] my-4 rounded text-center text-2xl font-bold bg-white">
+        <h1>We actually glad you're here <span class="welcome-name text-blue-700"></span></h1>
+      </div>
+      <div class="user text-white flex flex-col justify-center items-center fixed w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#090a11e6] z-10">
+        <span class="text-2xl font-bold mb-2">Enter Your Name</span>
+        <input class="user-input focus:outline-none  p-3 rounded mb-2 text-gray-950 text-xl text-center font-bold" type="text">
+        <span class="insuer hidden text-red-600 text-xl font-bold mb-2">Please Enter Your Name</span>
+        <input class="submit bg-green-600 py-3 px-6 rounded font-bold cursor-pointer" type="submit"></input>
+      </div>
+      <div
+        class="levels p-5 my-4 flex justify-center items-start mx-auto w-[95%] bg-white font-bold"
+      >
+        <label class="text-2xl mr-3">Select Level</label>
+        <select
+          class="select-box border-2 border-gray-700 rounded p-1 focus:outline-none"
+        >
+          <option value="Easy">Easy</option>
+          <option value="Normal">Normal</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+      <div class="start-game">
+        <button
+          class="block mx-auto w-[95%] my-4 rounded text-center text-xl text-white font-semibold p-5 transition-colors bg-green-500 hover:bg-green-700"
+        >
+          Start
+        </button>
+      </div>
+      <div
+        class="assign-word block mx-auto w-[95%] my-4 text-[50px] text-center font-bold rounded select-none text-white"
+      ></div>
+      <input
+        class="assign hidden focus:outline-none text-center py-5 text-2xl font-bold mx-auto w-[95%] rounded"
+        type="text"
+      />
+      <div
+        class="words-container flex flex-wrap justify-center p-5 mx-auto w-[95%] my-4 rounded text-center text-xl font-bold bg-white"
+      >
+        Press Start Button To Show Words
+      </div>
+      <div
+        class="game-info flex justify-between p-5 mx-auto w-[95%] bg-white rounded font-bold"
+      >
+        <div class="time">
+          Time Left : <span class="text-red-900">0</span> Seconds
+        </div>
+        <div class="score">
+          Score : <span class="score-num text-red-900">0</span> From :
+          <span class="score-from text-red-900">0</span>
+        </div>
+      </div>
+      <div
+        class="final bg-gray-950 text-white text-center text-2xl my-4 mx-auto w-[95%] rounded font-bold"
+      ></div>
+      <div
+        class="high-score hidden bg-gray-950 text-white text-center text-2xl my-4 mx-auto w-[95%] rounded font-bold"
+      ></div>
+      <div
+        class="finish text-white text-center cursor-pointer text-2xl my-4 mx-auto w-[95%] rounded font-bold"
+      ></div>
+      <div class="info bg-white p-5 my-4 mx-auto w-[95%] rounded font-bold">
+        <ul class="list-disc px-3">
+          <li class="my-2">
+            You Select
+            <span
+              class="level relative inline-block mx-1 text-gray-500 before:content-['['] after:content-[']']"
+            ></span>
+            Level
+          </li>
+          <li class="mb-2">
+            You Have
+            <span
+              class="seconds relative inline-block mx-1 text-gray-500 before:content-['['] after:content-[']']"
+            ></span>
+            Seconds To Type The Word
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

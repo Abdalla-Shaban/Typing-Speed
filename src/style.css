@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.finish.win {
+    @apply bg-green-600 p-5
+}
+
+.finish.lose {
+    @apply bg-red-600 p-5
+}
+
+.words-container div {
+    @apply text-white text-center p-2 m-1 rounded bg-gray-900
+}
+
+.select-box.none {
+    @apply pointer-events-none
+}
+
+.final.result {
+    @apply p-5
+}
+.user.done {
+    @apply hidden;
+}
+.high-score.done {
+    @apply p-5 block
+}
+.assign.start {
+    @apply block
+}
